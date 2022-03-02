@@ -1,0 +1,5 @@
+issue-1 : had diffuclties to connect with mongodb 
+solution-1: Obtain the connect string from mongodb atlas website
+            after creating a new user with password and adding my 
+            current IP Address.
+            
