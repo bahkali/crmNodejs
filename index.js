@@ -2,11 +2,11 @@ const express = require("express");
 const routes = require("./src/routes/crmRoutes");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 const app = express();
 // Mongoose connection
-const dbUri =
-  "mongodb+srv://admin:Jerico05@cluster0.fvex7.mongodb.net/CRMdb?retryWrites=true&w=majority";
+const dbUri = process.env.DBURI;
 mongoose.Promise = global.Promise;
 mongoose
   .connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
