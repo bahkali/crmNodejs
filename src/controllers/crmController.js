@@ -14,4 +14,13 @@ const addNewContact = (req, res) => {
   });
 };
 
-module.exports = addNewContact;
+const getContact = (req, res) => {
+  Contact.find({}, (err, contact) => {
+    if (err) {
+      res.send(err);
+    }
+    res.json(contact);
+  });
+};
+
+module.exports = { addNewContact, getContact };
