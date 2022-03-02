@@ -4,7 +4,7 @@
   "description": "crm backend with nodejs api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./inde.js"
   },
   "author": "Kaly",
   "license": "MIT",
@@ -15,8 +15,10 @@
     "express": "^4.17.3"
   },
   "dependencies": {
+    "body-parser": "^1.19.2",
     "mongodb": "^4.4.0",
     "mongoose": "^6.2.4",
-    "mongose": "^0.0.2-security"
+    "mongose": "^0.0.2-security",
+    "nodemon": "^2.0.15"
   }
 }
